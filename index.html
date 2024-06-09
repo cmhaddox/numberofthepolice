@@ -35,22 +35,35 @@
         .form-container {
             text-align: left;
         }
+
+        /* Additional classes for fade-in animation with delays */
+        .fade-in-delay-1 {
+            animation-delay: 1.0s;
+        }
+
+        .fade-in-delay-2 {
+            animation-delay: 2.5s;
+        }
+
+        .fade-in-delay-3 {
+            animation-delay: 4.0s;
+        }
     </style>
 </head>
 <body>
 <div class="container" id="form-container">
     <div class="form-container">
         <form id="location-form">
-            <div class="form-check" style="animation-delay: 1.0s;">
+            <div class="form-check fade-in-delay-1">
                 <input class="form-check-input" type="radio" id="usa" name="location" value="USA" checked>
                 <label class="form-check-label" for="usa">The United States of America</label>
             </div>
-            <div class="form-check" style="animation-delay: 2.5s;">
+            <div class="form-check fade-in-delay-2">
                 <input class="form-check-input" type="radio" id="other" name="location" value="NotUSA">
                 <label class="form-check-label" for="other">Other</label>
             </div>
             <br>
-            <button type="submit" class="btn btn-success" style="animation-delay: 4.0s;">Submit</button>
+            <button type="submit" class="btn btn-success fade-in-delay-3">Submit</button>
         </form>
     </div>
 </div>
@@ -315,7 +328,7 @@
                     <tr>
                       <td>Chile</td>
                       <td>133 (Police), 132 (Ambulance), 131 (Fire)</td>
-                    <tr>
+                    </tr>
                 </tbody>
               </table>
             `;
