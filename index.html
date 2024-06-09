@@ -12,17 +12,14 @@
 
     <style>
       .container {
-        height: 200px;
-        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
       }
       
       .center {
-        margin: 0;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        -ms-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
+        text-align: center;
       }
     </style>
   </head>
@@ -30,11 +27,11 @@
     <div class="container">
       <div class="center">
         <form action="/result.html">
-        <input type="radio" id="html" name="location" value="USA" checked>
-        <label for="html"> The United States of America</label><br>
-        <input type="radio" id="css" name="location" value="NotUSA">
-        <label for="css"> Other</label><br><br>
-        <input type="submit" value="Submit">
+          <input type="radio" id="usa" name="location" value="USA" checked>
+          <label for="usa"> The United States of America</label><br>
+          <input type="radio" id="other" name="location" value="NotUSA">
+          <label for="other"> Other</label><br><br>
+          <input type="submit" value="Submit">
         </form>
       </div>
     </div>
