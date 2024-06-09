@@ -11,20 +11,34 @@ lt<!doctype html>
     <title>What Number Is The Police?</title>
 
     <style>
-      .form-check {
-        max-width: 500px;
-        margin: auto;
+      .container {
+        height: 200px;
+        position: relative;
+        border: 3px solid green;
+      }
+      
+      .center {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
       }
     </style>
   </head>
   <body>
-    <form action="/result.html">
-      <label for="fname">First name:</label><br>
-      <input type="text" id="fname" name="fname" value="John"><br>
-      <label for="lname">Last name:</label><br>
-      <input type="text" id="lname" name="lname" value="Doe"><br><br>
-      <input type="submit" value="Submit">
-    </form>
+    <div class="container">
+      <div class="center">
+        <form action="/result.html">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value="John"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value="Doe"><br><br>
+        <input type="submit" value="Submit">
+        </form>
+      </div>
+    </div>
 
     <!-- Optional JavaScript; choose one of the two! -->
 
